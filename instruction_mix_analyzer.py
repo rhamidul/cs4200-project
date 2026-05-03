@@ -23,16 +23,16 @@ def opcode_of(inst):
 
 def categorize_opcode(op):
 
-    if op == 0x03 or op == 0x23:
+    if op == 0x03 or op == 0x23:  # Loads and Stores
         return "Memory"
     
     if op == 0x63:
-        return "Branches"
+        return "Branches"  # Branches (conditional jumps)
     
-    if op == 0x6F or op == 0x67:
+    if op == 0x6F or op == 0x67: # JAL and JALR (unconditional jumps and function calls)
         return "Control Flow"
     
-    if op == 0x33 or op == 0x13:
+    if op == 0x33 or op == 0x13:  # ALU operations (R-type and I-type arithmetic/logical instructions)
         return "ALU"
     
     return "Other"
