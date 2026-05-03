@@ -1,0 +1,10 @@
+Instruction Mix Analysis Report
+------------------------------
+Total valid instructions: 100
+
+Counts and percentages:
+  ALU         :   50   ( 50.00%)
+  Memory      :   20   ( 20.00%)
+  Branches    :    5   (  5.00%)
+  Control Flow:   15   ( 15.00%)
+  Other       :   10   ( 10.00%)
